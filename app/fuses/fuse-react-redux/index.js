@@ -1,15 +1,15 @@
 // React imports
-import React from 'react'
-import { render } from 'react-dom'
-
+import React from 'react';
+import { render } from 'react-dom';
+import {syncReduxAndRouter} from 'redux-simple-router';
 // app specific imports
-import history from './services/history'
-import routes from './routes'
-import Root from './containers/Root'
-import configureStore from './store/configureStore'
+import history from './services/history.js';
+import routes from './routes/routes.js';
+import Root from './containers/root.js';
+import configureStore from './store/configure-store-dev.js';
 
-
-const store = configureStore()
+const store = configureStore();
+syncReduxAndRouter(history, store);
 
 requestAnimationFrame(() =>
   render(

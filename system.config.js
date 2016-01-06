@@ -23,7 +23,9 @@ System.config({
     "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.1",
     "core-js": "npm:core-js@1.2.6",
     "fetch-plus": "npm:fetch-plus@3.6.1",
+    "fetch-plus-json": "npm:fetch-plus-json@3.6.0",
     "fusionstrings/jspm-test-module": "bitbucket:fusionstrings/jspm-test-module@master",
+    "humps": "npm:humps@1.0.0",
     "immutable": "npm:immutable@3.7.6",
     "isomorphic-fetch": "npm:isomorphic-fetch@2.2.0",
     "react": "npm:react@0.14.5",
@@ -35,6 +37,9 @@ System.config({
     "redux": "npm:redux@3.0.5",
     "redux-actions": "npm:redux-actions@0.9.0",
     "redux-devtools": "npm:redux-devtools@3.0.1",
+    "redux-devtools-dock-monitor": "npm:redux-devtools-dock-monitor@1.0.1",
+    "redux-devtools-log-monitor": "npm:redux-devtools-log-monitor@1.0.1",
+    "redux-logger": "npm:redux-logger@2.3.1",
     "redux-saga": "npm:redux-saga@0.3.3",
     "redux-search": "npm:redux-search@1.0.0",
     "redux-simple-router": "npm:redux-simple-router@1.0.2",
@@ -136,6 +141,10 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:babel-runtime@5.8.34": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:babel-runtime@6.3.19": {
+      "core-js": "npm:core-js@1.2.6",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:browserify-aes@1.0.5": {
@@ -311,6 +320,9 @@ System.config({
       "ua-parser-js": "npm:ua-parser-js@0.7.10",
       "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
     },
+    "npm:fetch-plus-json@3.6.0": {
+      "fetch-plus": "npm:fetch-plus@3.6.1"
+    },
     "npm:fetch-plus@3.6.1": {
       "isomorphic-fetch": "npm:isomorphic-fetch@2.2.0",
       "query-string": "npm:query-string@3.0.0"
@@ -340,7 +352,7 @@ System.config({
     },
     "npm:isomorphic-fetch@2.2.0": {
       "node-fetch": "npm:node-fetch@1.3.3",
-      "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
+      "whatwg-fetch": "npm:whatwg-fetch@0.10.1"
     },
     "npm:jstransform@10.1.0": {
       "base62": "npm:base62@0.1.1",
@@ -352,6 +364,9 @@ System.config({
     },
     "npm:lodash._basefor@3.0.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:lodash.debounce@3.1.1": {
+      "lodash._getnative": "npm:lodash._getnative@3.9.1"
     },
     "npm:lodash.isplainobject@3.2.0": {
       "lodash._basefor": "npm:lodash._basefor@3.0.2",
@@ -447,6 +462,11 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:react-dock@0.2.3": {
+      "lodash.debounce": "npm:lodash.debounce@3.1.1",
+      "object-assign": "npm:object-assign@4.0.1",
+      "react": "npm:react@0.14.5"
+    },
     "npm:react-dom@0.14.5": {
       "react": "npm:react@0.14.5"
     },
@@ -457,6 +477,15 @@ System.config({
     },
     "npm:react-inline-css@2.0.1": {
       "react": "npm:react@0.14.5"
+    },
+    "npm:react-json-tree@0.3.0": {
+      "babel-runtime": "npm:babel-runtime@5.8.34",
+      "react": "npm:react@0.14.5",
+      "react-mixin": "npm:react-mixin@1.7.0"
+    },
+    "npm:react-mixin@1.7.0": {
+      "object-assign": "npm:object-assign@2.1.1",
+      "smart-mixin": "npm:smart-mixin@1.2.1"
     },
     "npm:react-redux@4.0.6": {
       "hoist-non-react-statics": "npm:hoist-non-react-statics@1.0.3",
@@ -498,6 +527,24 @@ System.config({
     "npm:redux-actions@0.9.0": {
       "flux-standard-action": "npm:flux-standard-action@0.6.0",
       "reduce-reducers": "npm:reduce-reducers@0.1.1"
+    },
+    "npm:redux-devtools-dock-monitor@1.0.1": {
+      "babel-runtime": "npm:babel-runtime@6.3.19",
+      "parse-key": "npm:parse-key@0.2.1",
+      "react": "npm:react@0.14.5",
+      "react-dock": "npm:react-dock@0.2.3",
+      "react-pure-render": "npm:react-pure-render@1.0.2",
+      "redux-devtools": "npm:redux-devtools@3.0.1"
+    },
+    "npm:redux-devtools-log-monitor@1.0.1": {
+      "react": "npm:react@0.14.5",
+      "react-json-tree": "npm:react-json-tree@0.3.0",
+      "react-pure-render": "npm:react-pure-render@1.0.2",
+      "redux-devtools": "npm:redux-devtools@3.0.1",
+      "redux-devtools-themes": "npm:redux-devtools-themes@1.0.0"
+    },
+    "npm:redux-devtools-themes@1.0.0": {
+      "base16": "npm:base16@1.0.0"
     },
     "npm:redux-devtools@3.0.1": {
       "lodash": "npm:lodash@3.10.1",

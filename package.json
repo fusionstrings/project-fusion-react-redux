@@ -113,7 +113,9 @@
     "dependencies": {
       "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.1",
       "fetch-plus": "npm:fetch-plus@^3.6.1",
+      "fetch-plus-json": "npm:fetch-plus-json@^3.6.0",
       "fusionstrings/jspm-test-module": "bitbucket:fusionstrings/jspm-test-module@master",
+      "humps": "npm:humps@^1.0.0",
       "immutable": "npm:immutable@^3.7.6",
       "isomorphic-fetch": "npm:isomorphic-fetch@^2.2.0",
       "react": "npm:react@^0.14.3",
@@ -134,7 +136,10 @@
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
+      "core-js": "npm:core-js@^1.1.4",
+      "redux-devtools-dock-monitor": "npm:redux-devtools-dock-monitor@^1.0.1",
+      "redux-devtools-log-monitor": "npm:redux-devtools-log-monitor@^1.0.1",
+      "redux-logger": "npm:redux-logger@^2.3.1"
     }
   }
 }
