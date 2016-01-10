@@ -25,13 +25,17 @@ System.config({
     "fetch-plus": "npm:fetch-plus@3.6.1",
     "fetch-plus-json": "npm:fetch-plus-json@3.6.0",
     "fusionstrings/jspm-test-module": "bitbucket:fusionstrings/jspm-test-module@master",
+    "history": "npm:history@1.17.0",
     "humps": "npm:humps@1.0.0",
     "immutable": "npm:immutable@3.7.6",
     "isomorphic-fetch": "npm:isomorphic-fetch@2.2.0",
+    "lodash": "npm:lodash@3.10.1",
+    "normalizr": "npm:normalizr@1.4.1",
     "react": "npm:react@0.14.5",
     "react-dom": "npm:react-dom@0.14.5",
     "react-inline-css": "npm:react-inline-css@2.0.1",
     "react-redux": "npm:react-redux@4.0.6",
+    "react-router": "npm:react-router@1.0.3",
     "react-transmit": "npm:react-transmit@3.1.5",
     "react-virtualized": "npm:react-virtualized@2.7.3",
     "redux": "npm:redux@3.0.5",
@@ -333,6 +337,15 @@ System.config({
     "npm:hash.js@1.0.3": {
       "inherits": "npm:inherits@2.0.1"
     },
+    "npm:history@1.17.0": {
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "deep-equal": "npm:deep-equal@1.0.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "invariant": "npm:invariant@2.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "query-string": "npm:query-string@3.0.0",
+      "warning": "npm:warning@2.1.0"
+    },
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
@@ -402,6 +415,9 @@ System.config({
     "npm:node-uuid@1.4.7": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0"
+    },
+    "npm:normalizr@1.4.1": {
+      "lodash": "npm:lodash@3.10.1"
     },
     "npm:pako@0.2.8": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -493,6 +509,14 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "react": "npm:react@0.14.5",
       "redux": "npm:redux@3.0.5"
+    },
+    "npm:react-router@1.0.3": {
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "history": "npm:history@1.17.0",
+      "invariant": "npm:invariant@2.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "warning": "npm:warning@2.1.0"
     },
     "npm:react-transmit@3.1.5": {
       "ascii-json": "npm:ascii-json@0.2.0",
@@ -615,6 +639,10 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:warning@2.1.0": {
+      "loose-envify": "npm:loose-envify@1.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:weakee@0.9.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
